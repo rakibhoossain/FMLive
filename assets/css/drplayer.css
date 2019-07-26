@@ -1,0 +1,61 @@
+
+
+.btn.play 
+{
+    width: 19px;
+    height: 19px;
+    background-image: url(i/play.jpg);
+    display: inline-block !important;
+    padding: 0px !important;
+    background-repeat: no-repeat;
+}
+
+.btn.pause
+{
+    width: 19px;
+    height: 19px;
+    background-image: url(i/pause.jpg);
+    padding: 0px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.item.current .title {
+    color: #9966f6;
+}
+
+.btn.paused
+{
+    width:16px;
+    height:17px;
+    background-image: url(i/play.gif?3);
+    display: inline-block;
+}
+
+
+div.player 
+{
+    height:14px;
+    margin-bottom: 7px;
+
+}
+
+div.player.inactive
+{
+    margin-top:5px;
+    margin-bottom:0px;
+    border-top: solid 4px #ede3fd;
+}
+
+.item .title 
+{
+    -vertical-align:middle;
+}
+
+.item .btn 
+{
+    display:inline;
+    float:left; 
+    margin-right:5px;
+    cursor:pointer;
+}

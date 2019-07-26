@@ -1,0 +1,377 @@
+
+	
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+
+	<link rel="stylesheet" href="assets/css/style.css" />
+
+		<title>Colours FM 101.6 </title>
+
+</head>
+<body class="home">
+	<header id="header">
+		<nav class="navbar navbar-default">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="/">
+						<img src="assets/images/logo.png" class="img-responsive" alt="" style="margin:auto;"/>
+					</a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right main-menu">
+												<li role="presentation"><a href="allrj.php">Rj</a></li>
+						<li role="presentation"><a href="programs.php">Programs</a></li>
+												<li class="highlight"><a href="login.php">SIGN IN</a></li>
+												
+						
+						
+					</ul>
+				</div>
+				<!-- /.navbar-collapse -->
+			</div>
+			<!-- /.container -->
+		</nav>	
+	</header>	
+
+	<div id="content"> 
+	
+		<div class="text-logo" id="branding">
+			<center><img class="colours" src="assets/images/text-logo.png" alt="Colours 101.6 FM" /></center>
+		</div>
+			
+		<div class="container-fluid" id="equilizer">
+			<div class="row">
+				<div class="col-md-4 equilizer" style="padding:0px;"></div>
+				<div class="col-md-4">
+					<div class="radio-box">
+					<div id="butterfly-left"></div>
+						<img src="assets/images/beep.png" class="beepcounter img-responsive" alt="" />
+                        <div id="butterfly-right"></div>  
+					</div>
+				</div>
+				<div class="col-md-4" style="padding:0px;"></div>
+			</div>
+		</div>
+	
+		<div class="container">
+			<div id="shout_and_player">
+				<div class="radio-player">
+					<div id="jquery_jplayer_1" class="jp-jplayer"></div>
+					<div id="jp_container_1" class="jp-audio-stream" role="application" aria-label="media player">
+						<div class="jp-type-single">
+							<div class="jp-gui jp-interface">
+								<div class="jp-controls">
+									<div class="player-bg">
+										<button class="jp-play" role="button" tabindex="0">&nbsp;</button>
+									</div>
+								</div>
+								<div class="jp-volume-controls">
+									<button class="jp-mute" role="button" tabindex="0">&nbsp;</button>
+								</div>
+							</div>
+						</div>
+					</div>		
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+<style>
+    
+img.beepcounter {
+    position: absolute;
+}
+
+.radio-box {
+    position: relative;
+    margin: auto;
+    max-width: 300px;
+}  
+    
+    
+    
+.radio #butterfly-left {
+    background: url(assets/images/btrfly_right.png);
+    background-repeat:no-repeat;
+    width:190px;
+    height:190px;
+    z-index:5;
+    position:absolute;
+    background-size: contain;
+    margin-right: 80%;
+/*
+    -webkit-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    transform-origin: 0 0;
+*/
+    -webkit-transform-origin : -100% 50%;
+    -moz-transform-origin : -100% 50%;
+    -o-transform-origin : -100% 50%;
+    -ms-transform-origin : -100% 50%;
+    transform-origin : 100% 50%; 
+    
+    -webkit-animation: leaves 6s  infinite;
+    animation: leaves 6s   infinite ;
+
+}
+
+
+.radio #butterfly-right {
+    background: url(assets/images/btrfly_right.png);
+    background-repeat:no-repeat;
+    width:190px;
+    height:190px;
+    z-index:999999999999999;
+    position:absolute;
+    background-size: contain;
+    margin-left: 60%;
+/*
+    -webkit-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    transform-origin: 0 0;
+*/
+    -webkit-transform-origin : -100% 50%;
+    -moz-transform-origin : -100% 50%;
+    -o-transform-origin : -100% 50%;
+    -ms-transform-origin : -100% 50%;
+    transform-origin : -100% 50%; 
+    
+    -webkit-animation: leaves 6s  infinite;
+    animation: leaves 6s  infinite ;
+
+}
+
+
+@-webkit-keyframes leaves {
+    0% {
+        -webkit-transform: scale(0.5);
+        opacity: 0;
+    }
+   
+    50%{
+         opacity: 1;
+    }
+    
+    100%{
+       -webkit-transform: scale(2);
+         opacity: 0;
+    }
+}
+    
+    
+    
+    
+    
+    
+    
+    
+@media only screen and (max-width: 1230px)  {
+@-webkit-keyframes leaves {
+    0% {
+        -webkit-transform: scale(0.5);
+        opacity: 0;
+    }
+   
+    50%{
+         opacity: 1;
+    }
+    
+    100%{
+       -webkit-transform: scale(1.5);
+         opacity: 0;
+    }
+}
+    
+}
+    
+    
+    
+@media only screen and (max-width: 767px)  {
+@-webkit-keyframes leaves {
+    0% {
+        -webkit-transform: scale(0.5);
+        opacity: 0;
+    }
+   
+    50%{
+         opacity: 1;
+    }
+    
+    100%{
+       -webkit-transform: scale(1.5);
+         opacity: 0;
+    }
+}
+    
+    
+body .radio-box{
+	width: 200px !important;
+	height: 200px !important;
+} 
+    
+    
+ul.footer-menu {
+    text-align: center;
+}
+
+p.footer-info {
+    text-align: center;
+}    
+  
+
+    body a.navbar-brand{
+        width: inherit;
+    }
+    
+}    
+    
+    
+    
+    
+    
+</style>
+
+
+
+
+
+
+
+
+	<footer id="footer">
+		<div class="footer-content">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-sm-6">
+						<!--<ul class="footer-menu">
+							<li><a href="allrj.php">RJ</a></li>
+							<li><a href="programs.php">PROGRAMS</a></li> 
+							<li><a href="#">TERMS</a></li>
+							<li><a href="#">PRIVACY & POLICY</a></li>
+						</ul> -->
+						<p class="footer-info" style="text-align:left;">DOWNLOAD OUR APP NOW! <a href="https://play.google.com/store/apps/details?id=com.audacityit.fmcolours" target="_blank"><img style="margin-left: 10px;" src="assets/images/googleplay.png" alt="" /></a></p>
+					</div>
+					<div class="col-md-6 col-sm-6">
+						
+						<p class="footer-info">Made with <img style="margin-left: 10px;" src="assets/images/love.png" alt="" /> <a href="http://audacityit.com/" target="_blank">Audacity IT Solutions Ltd.</a> </p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</footer>
+	
+<div class="modal fade" id="editpost" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div id="cat_update_esponse"></div>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal" enctype="multipart/form-data" method="post" id="post_edit_form">
+                   <input type="hidden" name="post_id" id="post-id" >
+                   <input type="hidden" name="post_type" id="post-type" >
+
+                    <div class="form-group">
+                        <div class="col-sm-12">
+                            <textarea name="post_content" class="form-control" id="post-content" ></textarea>
+                        </div>
+                    </div>
+                    
+                    <ul class="button-list">
+                        <li>
+                            <button type="submit"  class="btn btn-default cancel" data-dismiss="modal" aria-label="Close">Cancel</button>
+                        </li>
+                        <li>
+                            <button type="submit" name="update" class="btn btn-default save">Update</button>
+                        </li>
+
+                    </ul>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="assets/js/custom.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.jplayer.js"></script>
+
+
+	
+	
+	
+	
+
+	
+	
+	
+	
+
+	
+	
+	<script type="text/javascript">
+		//<![CDATA[
+		$(document).ready(function(){
+
+			var stream = {
+				title: "Colours FM 101.6",
+				mp3: "http://45.64.135.88:8000/stream1"
+			},
+			ready = false;
+
+			$("#jquery_jplayer_1").jPlayer({
+				ready: function (event) {
+					ready = true;
+					$(this).jPlayer("setMedia", stream);
+				},
+				pause: function() {
+					$(this).jPlayer("clearMedia");
+				},
+				error: function(event) {
+					if(ready && event.jPlayer.error.type === $.jPlayer.error.URL_NOT_SET) {
+						// Setup the media stream again and play it.
+						$(this).jPlayer("setMedia", stream).jPlayer("play");
+					}
+				},
+				swfPath: "../../dist/jplayer",
+				supplied: "mp3",
+				preload: "none",
+				wmode: "window",
+				useStateClassSkin: true,
+				autoBlur: false,
+				keyEnabled: true
+			});
+
+		});
+		//]]>
+	</script>	
+	
+	
+
+
+
+	
+	
+	
+</body>
+</html>	
